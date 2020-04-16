@@ -1,7 +1,8 @@
-package com.slepnev.hvaquest
+package com.slepnev.hvaquest.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.slepnev.hvaquest.R
 
 class MainActivity : AppCompatActivity() {
 
