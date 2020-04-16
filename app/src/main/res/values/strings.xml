@@ -9,4 +9,6 @@
     <string name="confirm">Confirm</string>
     <string name="location_instructions">Go to the location as shown in the image below.</string>
     <string name="next_question">Next Question</string>
+    <string name="finish">Finish</string>
+    <string name="congrats_text">Congratulations, you finished the quest!\nHere is your prize</string>
 </resources>
