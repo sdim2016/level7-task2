@@ -16,4 +16,8 @@ class QuestViewModel : ViewModel() {
     fun isAnswerCorrect(answer: String, question: Question):Boolean {
         return answer == question.correctAnswer
     }
+
+    fun getQuestionsCount(): Int {
+        return questions.size
+    }
 }
