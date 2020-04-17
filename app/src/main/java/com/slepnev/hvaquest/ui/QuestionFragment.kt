@@ -10,6 +10,7 @@ import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 import com.slepnev.hvaquest.R
@@ -56,7 +57,8 @@ class QuestionFragment : Fragment() {
             if (viewModel.isAnswerCorrect(
                     rgOptions.findViewById<RadioButton>(rgOptions.checkedRadioButtonId).text.toString(),
                     question)) {
-                Toast.makeText(context, "Correct", Toast.LENGTH_SHORT).show()
+                val action = QuestionFragmentDirections.actionQuestionFragmentToLocationFragment(args.questionNumber)
+                findNavController().navigate(action)
             } else {
                 Toast.makeText(context, "Wrong", Toast.LENGTH_SHORT).show()
 
